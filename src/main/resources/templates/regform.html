@@ -2,9 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" 
 	  xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>등록 폼</title>
+    <title>사용자 정보 조회</title>
     <th:block th:include="fragments/header"></th:block>
-    <script type="text/javascript" src="/js/main.js"></script>
+    <!--  웹 브라우저에 내장된 html 인터프리터에게 무시
+ 	<script type="text/javascript" src="/js/main.js"></script>
+ 	-->
 </head>
 <body>
 <th:block th:include="fragments/nav"></th:block>
@@ -36,12 +38,9 @@
                 </div>
             </div>
         </form>
-
     </div>
-
 </div>
-
+  
 <th:block th:include="fragments/footer"></th:block>
-
 </body>
 </html>
