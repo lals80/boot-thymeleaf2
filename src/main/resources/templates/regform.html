@@ -17,19 +17,21 @@
 
         <div id="feedback"></div>
 
-        <form class="form-horizontal" id="regform">
+        <!-- th태그(타임리프태그)를 사용해서 Ajax 사용 없이도 다양한 방식으로 전송 가능. -->
+        <form th:action="@{'/users'}" th:method="post">
             <div class="form-group form-group-lg">
                 <label class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name" name="name"/>
+                    <input type="text" class="form-control" name="name" id="name"/>
                 </div>
             </div>
-			<div class="form-group form-group-lg">
+            <div class="form-group form-group-lg">
                 <label class="col-sm-2 control-label">Company</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="company" name="company"/>
+                    <input type="text" class="form-control" name="company" id="company"/>
                 </div>
             </div>
+
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <button type="submit" id="bth-search"
