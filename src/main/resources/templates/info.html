@@ -34,9 +34,9 @@
 						<!-- 
 						<form th:action="@{'/login'}" th:method="post">
 						 -->
-						<form action="/login" method="post" id="register_form">
+						<form action="@{'/users/{id}'(id=${id})}" th:method="put" id="register_form" th:object="${user}">
 							<div class="mt-10">
-								<input type="text" name="userId" placeholder="사용자 아이디" onfocus="this.placeholder = ''" onblur="this.placeholder = '사용자 아이디'" required="" class="single-input">
+								<input type="text" name="userId" placeholder="사용자 아이디" onfocus="this.placeholder = ''" onblur="this.placeholder = '사용자 아이디'" required="" class="single-input" ReadOnly>
 							</div>
 							<div class="mt-10">
 								<input type="password" name="userPw" placeholder="사용자 암호" onfocus="this.placeholder = ''" onblur="this.placeholder = '사용자 암호'" required="" class="single-input">

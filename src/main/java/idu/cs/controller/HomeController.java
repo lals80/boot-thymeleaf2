@@ -87,7 +87,7 @@ public class HomeController {
 				.orElseThrow(() -> 
 				new ResourceNotFoundException("not found " + userId ));
 		model.addAttribute("user",user);
-		return "user";
+		return "info";
 	}	
 	@GetMapping("/register-form")
 	public String loadRegForm(Model model) {		

@@ -23,7 +23,7 @@
                                     <a class="nav-link" href="/register-form">Register</a>
                                 </li>
                                 <li th:if="${session.user}" class="nav-item">
-                                    <a class="nav-link" href="/info">Info</a>
+                                    <a class="nav-link" th:href="@{'/users/{id}'(id=${id})}">Info</a>
                                 </li>
                                 <li th:if="${session.user}" class="nav-item">
                                     <a class="nav-link" href="/logout">logout</a>

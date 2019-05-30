@@ -18,12 +18,12 @@ public class User {
 	@Column(nullable=false, length=20, unique=true)
 	private String userId;
 	@Column(nullable=false)
-	private String userPw;
+	private String userPw; 
 	private String name;
 	private String company;
 	
 	public String getUserId() {
-		return userId;
+		return userId; 
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
